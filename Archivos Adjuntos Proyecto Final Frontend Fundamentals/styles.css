@@ -23,6 +23,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 5rem;
     text-align: center;
+    margin: 5px 0 !important;
+
 }
 
 h2 {
@@ -219,6 +221,11 @@ h3 {
 
 .columna-footer nav a:hover {
     text-decoration: underline;
+}
+
+:root {
+    --bs-primary: #037BC0; /* Azul */
+    --bs-success: #8cbc00; /* Verde */
 }
 
 
