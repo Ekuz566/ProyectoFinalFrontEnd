@@ -532,3 +532,73 @@ h3 {
         margin-top: 10px;
     }
 }
+
+/* ===== ANIMACIONES ===== */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicación */
+.fila,
+.categoria,
+.hero-contenido {
+    animation: fadeUp 0.8s ease-out both;
+}
+
+.columna {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.columna:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.btn {
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* =====================
+   ANIMACIÓN CARRITO
+===================== */
+
+.btn-carrito {
+    transition: transform 0.2s ease;
+}
+
+/* Al pasar el cursor */
+.btn-carrito:hover {
+    animation: pulseCarrito 0.8s infinite ease-in-out;
+}
+
+/* Keyframes */
+@keyframes pulseCarrito {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.12);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.categoria img {
+    transition: transform 0.4s ease;
+}
+
+.categoria:hover img {
+    transform: scale(1.05);
+}
